@@ -1,0 +1,25 @@
+
+:root {
+  --honey: #d9a441;
+  --honey-light: #f4dfad;
+  --honey-dark: #a87422;
+  --brown: #38251b;
+  --brown-light: #634735;
+  --cream: #fffaf0;
+  --ivory: #f8f2e7;
+  --white: #ffffff;
+  --text: #352a23;
+  --muted: #786e64;
+  --border: #e8ddcb;
+  --success: #31734b;
+  --danger: #b33b32;
+
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+
+  --container: 1200px;
+  --radius: 12px;
+  --radius-large: 22px;
+  --shadow: 0 8px 30px rgba(56, 37, 27, 0.08);
+  --transition: 0.25s ease;
+}

@@ -1,0 +1,225 @@
+
+/* ========================================
+   CHECKOUT LAYOUT
+======================================== */
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.85fr);
+  align-items: start;
+  gap: 30px;
+}
+
+/* ========================================
+   PLACE YOUR ORDER
+======================================== */
+
+.checkout-form {
+  min-width: 0;
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  margin-bottom: 20px;
+  font-size: 1.65rem;
+}
+
+.checkout-description {
+  margin-bottom: 25px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* WhatsApp order information */
+
+.whatsapp-order-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 20px 0 25px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--cream);
+}
+
+.whatsapp-order-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff0cc;
+  color: var(--honey-dark);
+  font-size: 1.1rem;
+}
+
+.whatsapp-order-info h3 {
+  margin: 2px 0 7px;
+  font-size: 1.05rem;
+}
+
+.whatsapp-order-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+/* Order button */
+
+#whatsapp-order-button {
+  width: 100%;
+  min-height: 50px;
+  margin-top: 8px;
+}
+
+#whatsapp-order-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+/* Return to cart */
+
+.back-to-cart {
+  display: block;
+  margin-top: 20px;
+  color: var(--brown-light);
+  font-size: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.back-to-cart:hover {
+  color: var(--honey-dark);
+}
+
+/* ========================================
+   ORDER SUMMARY
+======================================== */
+
+.checkout-summary {
+  position: sticky;
+  top: 120px;
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.checkout-summary h2 {
+  margin-bottom: 22px;
+}
+
+.checkout-summary hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+.checkout-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 16px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.checkout-line span {
+  color: var(--muted);
+}
+
+.checkout-line strong {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.checkout-summary .summary-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 13px;
+  font-size: 0.9rem;
+}
+
+.checkout-summary .summary-total {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.checkout-summary .summary-note {
+  margin: 15px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+/* ========================================
+   EMPTY CART / ERROR
+======================================== */
+
+#checkout-error:empty {
+  display: none;
+}
+
+#checkout-error {
+  margin: 12px 0;
+  color: #a33225;
+  font-size: 0.88rem;
+}
+
+#checkout-items .muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+#checkout-items a {
+  color: var(--honey-dark);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 850px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .checkout-summary {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .checkout-form h2,
+  .checkout-summary h2 {
+    font-size: 1.45rem;
+  }
+
+  .whatsapp-order-info {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .checkout-summary {
+    padding: 20px;
+  }
+
+  .checkout-line {
+    gap: 10px;
+    font-size: 0.84rem;
+  }
+}

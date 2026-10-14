@@ -1,0 +1,86 @@
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 12px 23px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-align: center;
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--honey-dark);
+  color: var(--white);
+}
+
+.btn-gold {
+  background: var(--honey);
+  color: var(--brown);
+}
+
+.btn-gold:hover {
+  background: var(--honey-light);
+}
+
+.btn-outline {
+  border-color: var(--brown);
+  background: transparent;
+  color: var(--brown);
+}
+
+.btn-outline:hover {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.btn-light {
+  background: var(--white);
+  color: var(--brown);
+}
+
+.btn-light:hover {
+  background: var(--honey-light);
+}
+
+.btn-whatsapp {
+  background: #218c53;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background: #176b3e;
+  color: white;
+}
+
+.btn-small {
+  min-height: 38px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn:disabled {
+  transform: none;
+}

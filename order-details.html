@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details | ATMA Beekeeper</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="order-details.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="section">
+    <div class="container order-details-container">
+      <div class="order-details-heading">
+        <span class="eyebrow">Your order</span>
+        <h1>Order Details</h1>
+        <p>Review your saved order and its current demo status.</p>
+      </div>
+
+      <div id="order-details-content" class="order-details-card" aria-live="polite">
+        <p>Loading order details...</p>
+      </div>
+
+      <div class="order-details-actions">
+        <a href="invoice.html" class="btn btn-primary">View Invoice</a>
+        <a href="products.html" class="btn btn-outline">Continue Shopping</a>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="navigation.js"></script>
+  <script src="main.js"></script>
+  <script src="order-details.js"></script>
+</body>
+</html>

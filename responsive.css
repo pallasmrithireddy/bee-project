@@ -1,0 +1,120 @@
+
+@media (max-width: 1050px) {
+  .container {
+    width: min(var(--container), calc(100% - 32px));
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-inner {
+    min-height: 76px;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 12px 22px 22px;
+    border-bottom: 1px solid var(--border);
+    background: var(--cream);
+    box-shadow: var(--shadow);
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .header-actions > .btn {
+    display: none;
+  }
+
+  .header-actions {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  h1 {
+    font-size: clamp(2.3rem, 11vw, 3.3rem);
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.58rem;
+  }
+
+  .cart-link {
+    font-size: 0.85rem;
+  }
+
+  .announcement-bar {
+    font-size: 0.68rem;
+  }
+
+  .btn {
+    max-width: 100%;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Not Completed | ATMA Beekeeper</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="order-failed.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="section">
+    <div class="container status-container">
+      <div class="status-card">
+        <div class="status-icon failed-icon" aria-hidden="true">!</div>
+        <span class="eyebrow">Payment simulation</span>
+        <h1>Payment not completed</h1>
+        <p>
+          The simulated payment was marked as failed. Your cart has been
+          kept so you can try again.
+        </p>
+        <div id="failed-order-details" class="status-order-details"></div>
+        <div class="status-actions">
+          <a class="btn btn-primary" href="checkout.html">Return to Checkout</a>
+          <a class="btn btn-outline" href="cart.html">Review Cart</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="navigation.js"></script>
+  <script src="main.js"></script>
+  <script src="order.js"></script>
+</body>
+</html>

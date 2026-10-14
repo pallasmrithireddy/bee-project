@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | ATMA Beekeeper</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="payment.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="section">
+    <div class="container payment-container">
+      <div class="payment-card">
+        <span class="eyebrow">Demo checkout</span>
+        <div class="payment-icon" aria-hidden="true">◇</div>
+        <h1>Simulated Payment</h1>
+        <p class="payment-warning">
+          This is a demonstration only. No real money will be charged.
+          Do not enter card details or sensitive payment information.
+        </p>
+
+        <div class="demo-order-total">
+          <span>Amount for this demo order</span>
+          <strong id="payment-total">₹0</strong>
+        </div>
+
+        <div id="payment-order-info" class="payment-order-info"></div>
+
+        <button id="simulate-success" class="btn btn-primary btn-block"
+          type="button">Simulate Successful Payment</button>
+        <button id="simulate-failure" class="btn btn-outline btn-block"
+          type="button">Simulate Failed Payment</button>
+        <a class="back-to-cart" href="checkout.html">← Back to checkout</a>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="navigation.js"></script>
+  <script src="main.js"></script>
+  <script src="payment.js"></script>
+</body>
+</html>

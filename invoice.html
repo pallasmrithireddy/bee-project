@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice | ATMA Beekeeper</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="invoice.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="section">
+    <div class="container invoice-container">
+      <div class="invoice-toolbar">
+        <div>
+          <span class="eyebrow">Order documentation</span>
+          <h1>Invoice</h1>
+        </div>
+        <button class="btn btn-primary" id="print-invoice" type="button">
+          Print / Save as PDF
+        </button>
+      </div>
+
+      <div id="invoice-content" class="invoice-paper">
+        <p>Loading invoice...</p>
+      </div>
+
+      <p class="invoice-disclaimer">
+        Demo invoice only. This document is not a tax invoice or proof of
+        payment. Delivery charges are not included.
+      </p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="navigation.js"></script>
+  <script src="main.js"></script>
+  <script src="invoice.js"></script>
+</body>
+</html>

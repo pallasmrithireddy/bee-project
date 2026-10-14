@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore ATMA Beekeeper natural honey, available in four sizes.">
+  <title>Our Honey | ATMA Beekeeper</title>
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <p class="product-breadcrumb"><a href="index.html">Home</a> / <a href="products.html">Our Honey</a> / Product</p>
+
+        <div class="product-detail-grid">
+          <div class="product-detail-image">
+            <img id="detail-image" src="900g product image.png"
+              alt="ATMA Beekeeper natural honey">
+          </div>
+
+          <div class="product-detail-content">
+            <span class="eyebrow">ATMA Beekeeper · Pure natural honey</span>
+            <h1 id="detail-name">ATMA Natural Honey — 900 g</h1>
+            <p class="product-detail-price" id="detail-price">₹700</p>
+
+            <p class="product-detail-description">
+              Natural honey harvested from managed bee colonies in Telangana.
+              Enjoy its distinctive character in your everyday routines,
+              breakfast, drinks and cooking.
+            </p>
+
+            <div class="product-choices">
+              <label for="detail-size">Choose your jar size</label>
+              <select id="detail-size">
+                <option value="250">250 g — ₹200</option>
+                <option value="500">500 g — ₹400</option>
+                <option value="900" selected>900 g — ₹700</option>
+                <option value="1000">1000 g — ₹800</option>
+              </select>
+            </div>
+
+            <div class="product-quantity">
+              <label for="detail-quantity">Quantity</label>
+              <div class="quantity-control">
+                <button id="quantity-minus" type="button" aria-label="Decrease quantity">−</button>
+                <input id="detail-quantity" type="number" min="1" max="99"
+                  value="1" inputmode="numeric" aria-label="Quantity">
+                <button id="quantity-plus" type="button" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <button id="detail-add-to-cart" class="btn btn-primary btn-block"
+              type="button">Add to Cart</button>
+            <a class="btn btn-outline btn-block product-cart-link" href="cart.html">
+              View Shopping Cart
+            </a>
+
+            <div class="product-highlights">
+              <p>✓ No added sugar or artificial flavours</p>
+              <p>✓ Carefully harvested and hygienically packed</p>
+              <p>✓ Natural colour and flavour variations may occur</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-information">
+      <div class="container product-information-grid">
+        <div>
+          <span class="eyebrow">A natural harvest</span>
+          <h2>Honey with its own character.</h2>
+          <p>Floral sources and seasons influence honey's aroma, colour and texture. Crystallisation is a natural process that may occur over time.</p>
+        </div>
+        <div>
+          <h3>Storage instructions</h3>
+          <p>Store in a cool, dry place and keep the lid tightly closed. Refrigeration is not necessary.</p>
+          <h3>Important note</h3>
+          <p>Honey should not be given to infants below one year of age.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="navigation.js"></script>
+  <script src="main.js"></script>
+  <script src="product.js"></script>
+</body>
+</html>

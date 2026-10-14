@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Checkout | ATMA Beekeeper</title>
+
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="forms.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <span class="eyebrow">Almost yours</span>
+        <h1>Checkout</h1>
+        <p>Review your order and continue through WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container checkout-layout">
+
+        <!-- WhatsApp Order Section -->
+        <section class="checkout-form form-card">
+          <h2>Place Your Order</h2>
+
+          <p class="checkout-description">
+            Your honey is almost yours! Review your order and send it
+            directly to ATMA Beekeeper through WhatsApp.
+          </p>
+
+          <div class="whatsapp-order-info">
+            <span class="whatsapp-order-icon" aria-hidden="true">✦</span>
+
+            <div>
+              <h3>Order through WhatsApp</h3>
+              <p>
+                Send your order directly to us. You can share your name,
+                phone number and delivery address in the WhatsApp chat.
+              </p>
+            </div>
+          </div>
+
+          <p id="checkout-error" class="form-error" role="alert"></p>
+
+          <button
+            id="whatsapp-order-button"
+            class="btn btn-primary btn-block"
+            type="button">
+            Place Order Through WhatsApp
+          </button>
+
+          <a class="back-to-cart" href="cart.html">
+            ← Return to cart
+          </a>
+        </section>
+
+        <!-- Order Summary -->
+        <aside class="checkout-summary">
+          <h2>Your Order</h2>
+
+          <div id="checkout-items"></div>
+
+          <hr>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="checkout-subtotal">₹0</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Shipping</span>
+            <strong>To be confirmed</strong>
+          </div>
+
+          <div class="summary-row summary-total">
+            <span>Product total</span>
+            <strong id="checkout-total">₹0</strong>
+          </div>
+
+          <p class="summary-note">
+            The displayed total covers products only. Delivery charges,
+            if any, will be confirmed through WhatsApp.
+          </p>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="navigation.js"></script>
+  <script src="main.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>
